@@ -234,23 +234,14 @@ header .nav-bar .others ul li i {
 }
 
 header .menu-movil {
-  width: 100%;
+  width: 50%;
   height: 100%;
-  position: absolute;
-  /* fallback for old browsers */
-  background: #000080;
-  /* Chrome 10-25, Safari 5.1-6 */
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ffffff;
+  border-right: 1px solid #ccc;
   z-index: 9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -260,31 +251,105 @@ header .menu-movil {
   -o-transition: all .3s ease-in;
   position: fixed;
   left: -100%;
-  text-align: center;
+  text-align: left;
 }
 
-header .menu-movil ul a {
-  text-decoration: none;
-  color: #f85032;
+header .menu-movil .lista-menu-movil ul .opcion {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2c2c;
 }
 
-header .menu-movil ul a li {
-  color: #FFF;
-  margin: 30px 0;
-  list-style: none;
-  font-size: 18px;
+header .menu-movil .lista-menu-movil ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 10px;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
 }
 
-header .menu-movil ul a.inactivo-temporal {
-  color: #3f3f3f;
-  cursor: context-menu;
+header .menu-movil .lista-menu-movil ul li .text-li-movil {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
+}
+
+header .menu-movil .lista-menu-movil ul li .text-li-movil:hover {
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
+}
+
+header .menu-movil .lista-menu-movil ul li:hover {
+  height: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
+}
+
+header .menu-movil .lista-menu-movil ul li:hover .submenu-movil {
+  border-radius: 15px;
+  background: #eeeeee;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  margin: 15px 0;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
+  opacity: 1;
+}
+
+header .menu-movil .lista-menu-movil ul li:hover .submenu-movil ul li:nth-child(1) {
+  padding: 15px 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+header .menu-movil .lista-menu-movil ul li:hover .submenu-movil ul li:nth-last-child(1) {
+  padding: 15px 10px;
+  border-radius: 0 0 15px 15px;
+}
+
+header .menu-movil .lista-menu-movil ul li:hover .submenu-movil ul li:hover {
+  background: #cecece;
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  padding: 15px 10px !important;
+}
+
+header .menu-movil .lista-menu-movil ul li .submenu-movil {
+  display: none;
+  opacity: 0;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
 }
 
 header .menu-movil.active {
   transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
-  left: -50%;
+  left: 0%;
 }
 
 header .sub-menu {
