@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
 
     this.setTimeout(() => {
 
-        pintura.style.transition = '.7s ease-in'
+        pintura.style.transition = '1s ease-in'
         pintura.style.marginTop = '-1200px'
 
     }, 3000);

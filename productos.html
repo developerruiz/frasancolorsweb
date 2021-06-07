@@ -33,11 +33,24 @@
 
 <body>
 
+
+    <div class="loading">
+        <div class="logoload">
+            <img src="img/frasan.png" alt="">
+        </div>
+    </div>
+
     <!-- HEADER-->
     <header>
         <nav class="nav-bar">
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+
+            <div class="others">
+                <ul>
+                    <li><i class="fas fa-shopping-cart"></i></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
             <div class="logo">
                 <a href="index.html">
@@ -60,8 +73,8 @@
                                     <li>
                                         <h4>Categoria</h4>
                                     </li>
-                                    <li><a href="productos.html#vinilicas">Vinilicas</a></li>
-                                    <li><a href="productos.html#esmaltes">Esmaltes</a></li>
+                                    <li>Vinilicas</li>
+                                    <li>Esmaltes</li>
                                     <li>Impermeabilizantes</li>
                                     <li>Complemntos</li>
                                 </ul>
@@ -71,18 +84,47 @@
                     <li><a href="inspiracion.html">Inspiración</a></li>
                     <li><a href="historia.html">Historias de éxito</a></li>
                     <li><a href="#">Carrito</a></li>
-                    <!-- <li>Carrito</li> -->
+
                 </ul>
             </div>
-            <div class="others">
-                <ul>
-                    <li><i class="fas fa-shopping-cart"></i></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+            <div class="burger-menu" id="burger_menu">
+                <a href="#menu-movil">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
         </nav>
+
+        <!-- MENU MOVIL -->
+        <div class="menu-movil" id="menu_movil">
+            <div class="lista-menu-movil">
+                <ul>
+                    <li class="opcion">Menu</li>
+                </ul>
+                <!-- <hr> -->
+                <ul>
+                    <li>
+                        <p>Color</p>
+                    </li>
+                    <li class="despliega">
+                        <div class="text-li-movil">
+                            <p>Productos</p><i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="submenu-movil">
+                            <ul>
+                                <li><a href="productos.html">Vinilicas</a></li>
+                                <li><a href="productos.html">Esmaltes</a></li>
+                                <li>Impermeabilizantes</li>
+                                <li>Complemntos</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>inspiración</li>
+                    <li>Hitorias de éxito</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MENU MOVIL -->
         <div class="sub-menu">
             <ul>
                 <li>sdfg</li>
@@ -91,6 +133,7 @@
                 <li>sdfg</li>
             </ul>
         </div>
+        
         <div class="line-gradient"></div>
     </header>
     <!-- FIN DE HEADER -->
@@ -370,6 +413,8 @@
             })
         }
     </script>
+    <script src="loading.js"></script>
+    <script src="menuMovil.js"></script>
 </body>
 
 </html>
