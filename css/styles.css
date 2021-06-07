@@ -1253,6 +1253,9 @@ footer .row:nth-child(4) .columna:nth-child(1) {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  header .nav-bar .others {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 808px) {
