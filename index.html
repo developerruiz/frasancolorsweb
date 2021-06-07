@@ -32,11 +32,22 @@
 </head>
 
 <body>
+
+    <div class="icon-pantone">
+    </div>
+
+    <div class="loading">
+        <div class="logoload">
+            <img src="img/frasan.png" alt="">
+        </div>
+    </div>
     <!-- HEADER-->
     <header>
         <nav class="nav-bar">
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+            <div class="burger-menu" id="burger_menu">
+                <a href="#menu-movil">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
             <div class="logo">
                 <a href="index.html">
@@ -54,9 +65,11 @@
                                 <img src="img/cubeta_estelar19.png" alt="">
                             </div>
                             <div class="columna">
-                               
+
                                 <ul>
-                                    <li> <h4>Categoria</h4></li>
+                                    <li>
+                                        <h4>Categoria</h4>
+                                    </li>
                                     <li>Vinilicas</li>
                                     <li>Esmaltes</li>
                                     <li>Impermeabilizantes</li>
@@ -80,6 +93,26 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- MENU MOVIL -->
+        <div class="menu-movil" id="menu_movil">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="nosotros.html">
+                    <li>Nosotros</li>
+                </a>
+                <a href="catalogo.html">
+                    <li>Catálogo</li>
+                </a>
+                <a href="contacto.html">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+        </div>
+
+        <!-- MENU MOVIL -->
         <div class="sub-menu">
             <ul>
                 <li>sdfg</li>
@@ -114,10 +147,10 @@
             <i class="fas fa-chevron-left prev-btn"></i>
             <i class="fas fa-chevron-right next-btn"></i>
         </div>
-        <div class="navigation-visibility">
+        <!-- <div class="navigation-visibility">
             <div class="slide-icon active"></div>
             <div class="slide-icon"></div>
-        </div>
+        </div> -->
     </div>
     <!-- FIN DE BANNER SLIDE -->
     <main>
@@ -293,18 +326,18 @@
                 Destajistas 14, Industrial Xhala, 54750 Cuautitlán Izcalli, Estado de México.
             </div>
             <div class="columna">
-               <a href="mailto:contacto@frasancolors.mx">contacto@frasancolors.mx</a>
+                <a href="mailto:contacto@frasancolors.mx">contacto@frasancolors.mx</a>
             </div>
             <div class="columna">
-               <a href="tel:+525573142719">(+52)55 7314 2719</a>
-             </div>
+                <a href="tel:+525573142719">(+52)55 7314 2719</a>
+            </div>
         </div>
         <div class="row">
             <div class="columna">
                 Aviso de Privacidad
             </div>
             <div class="columna">
-           Terminos y condiciones
+                Terminos y condiciones
             </div>
         </div>
         <div class="row">
@@ -321,7 +354,8 @@
     <script src="script.js"></script>
     <script src="parallax.js"></script>
     <script src="pintar.js"></script>
-
+    <script src="loading.js"></script>
+    <script src="menuMovil.js"></script>
 </body>
 
 </html>

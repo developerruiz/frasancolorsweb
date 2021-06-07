@@ -44,9 +44,35 @@ li {
     list-style: none !important;
 }
 
-// h1,h2,h3,h4,h5,h6{
-//     font-family: ;
-// }
+// LOADING
+
+.loading {
+
+    background-image: url(../img/splash.png);
+    background-position: center top;
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    z-index: 999999999999999;
+    position: fixed;
+    top: 0;
+
+    .logoload {
+
+        width: 200px;
+        height: 100px;
+        position: relative;
+        top: 40%;
+        left: 49%;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
+// FIN DE LOADING
 
 header {
     width: 100% !important;
@@ -184,6 +210,60 @@ header {
         }
     }
 
+    .menu-movil {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+        /* fallback for old browsers */
+        background: #000080;
+        /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #030f27, #030f27);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: all .3s ease-in;
+        -webkit-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        position: fixed;
+        left: -100%;
+        text-align: center;
+
+        ul {
+
+            a {
+                text-decoration: none;
+                color: #f85032;
+
+                li {
+                    color: #FFF;
+                    margin: 30px 0;
+                    list-style: none;
+                    font-size: 18px;
+
+                }
+
+                &.inactivo-temporal {
+                    color: #3f3f3f;
+                    cursor: context-menu;
+                }
+            }
+
+
+        }
+
+        &.active {
+            // clip-path: circle(150% at 0 0);
+            transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            -o-transition: all .3s ease-in;
+            left: -50%;
+        }
+    }
+
     .sub-menu {
         width: 100%;
         height: 40px;
@@ -191,7 +271,7 @@ header {
         justify-content: center;
         align-items: center;
         background: #121212;
-        z-index: 9999;
+        z-index: 1;
         top: 80px;
         display: flex;
         align-items: center;
@@ -214,7 +294,7 @@ header {
         width: 100%;
         height: 8px;
         position: absolute;
-        z-index: 99999;
+        z-index: 1;
         top: 120px;
 
     }
@@ -474,8 +554,7 @@ main {
                 -o-transition: .3s ease-in;
 
                 &:hover {
-                    margin-top: -15px;
-                    // box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+                    // transform: scale(1.5);
                     transition: .3s ease-in;
                     -webkit-transition: .3s ease-in;
                     -o-transition: .3s ease-in;
@@ -552,8 +631,7 @@ main {
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
+                // justify-content: space-evenly;
                 height: auto;
 
                 >div {
@@ -566,6 +644,7 @@ main {
                 .active {
                     display: flex;
                     flex-wrap: wrap;
+                    justify-content: space-evenly;
                 }
 
                 .item {
@@ -598,7 +677,7 @@ main {
                     }
 
                     &:hover {
-                        margin-top: -5px;
+                        transform: scale(1.1);
                         transition: .3s ease-in;
                         -webkit-transition: .3s ease-in;
                         -o-transition: .3s ease-in;
@@ -710,10 +789,11 @@ main {
                 i {
                     font-size: 60px;
                     color: purple;
-                        transition: .2s ease-in;
-                        -webkit-transition: .2s ease-in;
-                        -o-transition: .2s ease-in;
-                    &:hover{
+                    transition: .2s ease-in;
+                    -webkit-transition: .2s ease-in;
+                    -o-transition: .2s ease-in;
+
+                    &:hover {
                         transform: scale(1.3);
                         transition: .2s ease-in;
                         -webkit-transition: .2s ease-in;
@@ -1026,33 +1106,45 @@ footer {
         justify-content: center;
     }
 }
-@media screen and(max-width: 808px){
-    main .cont-beneficio .tabla-beneficio{
+
+@media screen and(max-width: 808px) {
+    main .cont-beneficio .tabla-beneficio {
         flex-wrap: wrap;
         justify-content: center;
     }
-    main .cont-beneficio .tabla-beneficio .col{
-        width: 150px!important;
+
+    main .cont-beneficio .tabla-beneficio .col {
+        width: 150px !important;
         margin: 25px 0;
     }
 }
 
 @media screen and (max-width:688px) {
+    .loading {
+        background-position: center top;
+        background-size: cover;
+    }
+
     main .cont-color .manchas-btn img {
         width: 60px;
     }
-    main .cont-general{
+
+    main .cont-general {
         display: block;
     }
-    main .cont-general .cont-img-producto{
+
+    main .cont-general .cont-img-producto {
         width: 100%;
     }
+
     .row:nth-child(n-4) {
         padding: 30px 20px !important;
     }
-    main .cont-general .cont-info-producto{
+
+    main .cont-general .cont-info-producto {
         width: 100%;
     }
+
     footer .row:nth-child(1) .columna:nth-child(1) {
         width: 100%;
     }
@@ -1077,10 +1169,11 @@ footer {
         text-align: center;
     }
 }
-@media screen and(max-width: 425px){
- 
-    main .cont-beneficio .tabla-beneficio .col{
-        width: 50%!important;
+
+@media screen and(max-width: 425px) {
+
+    main .cont-beneficio .tabla-beneficio .col {
+        width: 50% !important;
     }
 }
 
@@ -1089,10 +1182,11 @@ footer {
         transform: scale(0);
     }
 
-    50% {transform: scale(1.5);}
+    50% {
+        transform: scale(1.5);
+    }
 
     100% {
         transform: scale(1);
     }
 }
-
