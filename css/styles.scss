@@ -57,6 +57,11 @@ li {
     justify-content: center;
 }
 
+.text-disabled {
+    color: #e0e0e0;
+}
+
+
 // LOADING
 
 .loading {
@@ -91,9 +96,10 @@ li {
 header {
     width: 100% !important;
     display: block !important;
+    position: fixed;
+    z-index: 9;
 
-
-    .nav-bar {
+    .nav_bar {
         background: #fff;
         height: 80px;
         top: 0;
@@ -120,19 +126,18 @@ header {
         }
 
         .lista-menu {
-            // background: red;
+
             width: 70%;
             display: flex;
             align-items: center;
             justify-content: center;
 
-            ul {
+            .opciones-menu1 {
                 display: flex;
 
                 li {
+
                     list-style: none;
-                    // margin: 0 20px;
-                    // background: steelblue;
                     width: 120px;
                     height: 80px;
                     display: flex;
@@ -141,9 +146,10 @@ header {
 
                     &:hover {
                         background: #ebebeb;
+                        .mega-menu {
+                            display: flex;
+                        }
                     }
-
-                    // cursor: pointer;
 
                     .mega-menu {
                         position: absolute;
@@ -155,61 +161,298 @@ header {
                         height: 350px;
                         text-align: center;
                         display: none;
-                        justify-content: center;
+                        justify-content: flex-start;
                         align-items: center;
                         background-image: url(../img/fondo-megamenu.png);
                         background-position: right top;
                         background-size: contain;
                         background-repeat: no-repeat;
-                        padding: 20px 40px;
                         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                        padding: 0 75px;
 
-                        .columna {
+                        .opciones-menu {
 
-                            width: 300px;
+                            width: 450px;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
 
-                            ul {
+                            .op {
+                                padding: 0 40px;
                                 display: flex;
-                                flex-direction: column;
-                                align-items: left;
-                                // margin-left: 0;
-                                justify-content: flex-start;
-
-                                li {
-                                    height: 40px;
-                                    width: 100%;
-                                   
-                                    display: flex;
-                                justify-content: flex-start;
-                                a{
-                                    width: 100%;
-                                    height: 40px;
-                                    text-align: left;
-                                }
-                                    
-                                }
-
+                                justify-content: space-between;
                             }
 
-                            .cat-vinilica {
-                                display: none;
-                            }
-
-                        }
-
-
-                        & .img {
-                            width: 150px;
-
-                            i {
+                            h3 {
+                                width: 100%;
+                                text-align: left;
                                 font-size: 20px;
+                                color: #585858;
+                                margin: 14px 0;
+                            }
+
+                            li {
+                                height: 40px;
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-start;
+
+                                .prod-vinilicas {
+                                    display: none;
+                                    position: absolute;
+                                    margin-left: 410px;
+                                    height: 100%;
+                                    // background: #fff;
+                                    // padding: 20px 40px;
+                                    width: 30%;
+                                    // justify-content: center;
+                                    // display: flex;
+                                    // background: red;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    .submenu-op-prod {
+
+                                        width: 100%;
+                                    }
+
+                                    li {
+                                        width: 100%;
+                                    }
+
+                                    .op-submenu {
+                                        padding: 0 15px;
+                                        width: 100%;
+
+                                        &:hover {
+                                            .img-prod {
+
+                                                display: flex;
+                                                opacity: 1;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+
+                                            }
+                                        }
+
+                                        .img-prod {
+
+                                            position: absolute;
+                                            margin-left: 90%;
+                                            height: 100%;
+                                            width: 90%;
+                                            display: none;
+                                            align-items: center;
+                                            justify-content: center;
+                                            opacity: 0;
+
+                                            img {
+                                                width: 150px;
+
+                                            }
+
+                                            &:hover {
+                                                top: 0;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .prod-esmalte {
+                                    display: none;
+                                    position: absolute;
+                                    margin-left: 410px;
+                                    height: 100%;
+                                    // background: #fff;
+                                    // padding: 20px 40px;
+                                    width: 30%;
+                                    // justify-content: center;
+                                    // display: flex;
+                                    // background: red;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    .submenu-op-prod {
+
+                                        width: 100%;
+                                    }
+
+                                    li {
+                                        width: 100%;
+                                    }
+
+                                    .op-submenu {
+                                        padding: 0 15px;
+                                        width: 100%;
+
+                                        &:hover {
+                                            .img-prod {
+
+                                                display: flex;
+                                                opacity: 1;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+
+                                            }
+                                        }
+
+                                        .img-prod {
+
+                                            position: absolute;
+                                            margin-left: 90%;
+                                            height: 100%;
+                                            width: 90%;
+                                            display: none;
+                                            align-items: center;
+                                            justify-content: center;
+                                            opacity: 0;
+
+                                            img {
+                                                width: 150px;
+
+                                            }
+
+                                            &:hover {
+                                                top: 0;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .prod-impermeble {
+                                    display: none;
+                                    position: absolute;
+                                    margin-left: 410px;
+                                    height: 100%;
+                                    // background: #fff;
+                                    // padding: 20px 40px;
+                                    width: 30%;
+                                    // justify-content: center;
+                                    // display: flex;
+                                    // background: red;
+                                    justify-content: flex-start;
+                                    align-items: center;
+
+                                    .submenu-op-prod {
+
+                                        width: 100%;
+                                    }
+
+                                    li {
+                                        width: 100%;
+                                    }
+
+                                    .op-submenu {
+                                        padding: 0 15px;
+                                        width: 100%;
+
+                                        &:hover {
+                                            .img-prod {
+
+                                                display: flex;
+                                                opacity: 1;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+
+                                            }
+                                        }
+
+                                        .img-prod {
+
+                                            position: absolute;
+                                            margin-left: 90%;
+                                            height: 100%;
+                                            width: 90%;
+                                            display: none;
+                                            align-items: center;
+                                            justify-content: center;
+                                            opacity: 0;
+
+                                            img {
+                                                width: 150px;
+
+                                            }
+
+                                            &:hover {
+                                                top: 0;
+                                                transition: 1s ease-in;
+                                                -webkit-transition: 1s ease-in;
+                                                -o-transition: 1s ease-in;
+                                                transform: scale(1.1);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .op.vinil:hover {
+                                .prod-vinilicas {
+                                    display: flex;
+                                }
+                            }
+
+                            .op.esmalte:hover {
+                                .prod-esmalte {
+                                    display: flex;
+
+                                }
+                            }
+
+                            .op.impermeble:hover {
+                                .prod-impermeble {
+                                    display: flex;
+
+                                }
+                            }
+
+                            // MEGA MENU SEGUNDA OPCION
+
+                            .op.espacios{
+                                &:hover{
+                                    .opciones-espacios{
+                                        display: flex;
+                                    }    
+                                }
+                                .opciones-espacios{
+                                    display: none;
+                                    margin-left: 350px;
+                                    width: 50%;
+                                    height: 100%;
+                                    background: steelblue;
+                                    position: absolute;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                    .op-espacio{
+                                        width: 100%;
+                                        height: auto;
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        justify-content: center;
+                                        
+
+                                        .vista-espacio{
+                                            width: 150px;
+                                            height: 100px;
+                                            background: red;
+                                            margin: 20px;
+                                        }
+                                    }
+                                }
                             }
                         }
-
-                    }
-
-                    &:hover .mega-menu {
-                        display: flex;
                     }
                 }
             }
@@ -383,6 +626,7 @@ header {
 }
 
 main {
+    
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
@@ -1154,27 +1398,27 @@ footer {
 }
 
 @media screen and (max-width:880px) {
-    header .nav-bar {
+    header .nav_bar {
         justify-content: space-between;
     }
 
-    header .nav-bar .lista-menu {
+    header .nav_bar .lista-menu {
         display: none;
     }
 
-    header .nav-bar .logo {
+    header .nav_bar .logo {
         display: flex;
         align-items: center;
         width: 100px;
     }
 
-    header .nav-bar .burger-menu {
+    header .nav_bar .burger-menu {
         display: flex;
         width: 100px;
 
     }
 
-    header .nav-bar .others {
+    header .nav_bar .others {
         width: 100px;
     }
 
@@ -1185,7 +1429,8 @@ footer {
     main .menu-categoria .container .contenido .active {
         justify-content: center;
     }
-    header .nav-bar .others{
+
+    header .nav_bar .others {
         display: none;
     }
 }
