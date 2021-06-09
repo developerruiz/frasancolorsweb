@@ -31,54 +31,189 @@
 <body>
     <!-- HEADER-->
     <header>
-        <nav class="nav_bar">
-
-
+        <nav class="nav_bar" id="menu-desktop">
             <div class="logo">
                 <a href="index.html">
                     <img src="img/frasancolors.png" alt="">
                 </a>
             </div>
             <div class="lista-menu">
-                <ul>
+                <ul class="opciones-menu1">
                     <li><a href="color.html">Color</a>
 
                     </li>
-                    <li><a href="#"><i class="fas fa-caret-down"></i> <a href="productos.html">Productos</a> </a>
+                    <li><a href="#"><a href="productos.html">Productos <i class="fas fa-caret-down"></i></a> </a>
                         <div class="mega-menu">
-                            <div class="columna">
 
-                                <h4>Vinilicas</h4>
-                                <ul>
-                                    <li><a href="cubeta-suprema.html">Suprema</a></li>
-                                    <li><a href="cubeta-suprema-premium.html">Suprema Premium</a></li>
-                                    <li><a href="cubeta-estelar.html">Estelear</a></li>
-                                    <li><a href="cubeta-supervision.html">Supervisión</a></li>
-                                </ul>
-                            </div>
-                            <div class="columna ">
-                                <h4>Esmaltes</h4>
-                                <ul>
-                                    <li><a href="cubeta-supremo.html">Supremo</a></li>
-                                    <li><a href="cubeta-supremowb.html">Supremo WB</a></li>
-                                    <li><a href="cubetavial.html">Vial</a></li>
+                            <ul class="opciones-menu">
 
-                                </ul>
-                            </div>
-                            <div class="columna ">
-                                <h4>Impermeabilizantes</h4>
-                                <ul>
-                                    <li><a href="cubeta-elastocryl.html">Elastocryl</a></li>
+                                <h3 class="op">Categorías</h3>
 
-                                </ul>
-                            </div>
+                                <li class="op vinil">Vinilicas <i class="fas fa-caret-right"></i>
+                                    <div class="prod-vinilicas">
+                                        <ul class="submenu-op-prod">
+                                            <h3 class="op">Cubetas</h3>
+
+                                            <a href="cubeta-suprema.html">
+                                                <li class="op-submenu">
+                                                    Suprema
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_suprema_19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+
+                                            <a href="cubeta-suprema-premium.html">
+                                                <li class="op-submenu">
+                                                    Suprema Premium
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_supremapremium19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+                                            <a href="cubeta-estelar.html">
+                                                <li class="op-submenu">
+                                                    Estelar
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_estelar19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+                                            <a href="cubeta-supervision.html">
+                                                <li class="op-submenu">
+                                                    Supervisión
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_supervision19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="op esmalte">Esmaltes <i class="fas fa-caret-right"></i>
+                                    <div class="prod-esmalte">
+
+                                        <ul class="submenu-op-prod">
+                                            <h3 class="op">Cubetas</h3>
+
+                                            <a href="cubeta-supremo.html">
+                                                <li class="op-submenu">
+                                                    Supremo
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_supremo19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+
+                                            <a href="cubeta-supremowb.html">
+                                                <li class="op-submenu">
+                                                    Supremo WB
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_supremowb19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+                                            <a href="cubetavial.html">
+                                                <li class="op-submenu">
+                                                    Trafico
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_trafico19.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="op impermeble">Impermeabilizantes<i class="fas fa-caret-right"></i>
+                                    <div class="prod-impermeble">
+
+                                        <ul class="submenu-op-prod">
+                                            <h3 class="op">Cubetas</h3>
+
+                                            <a href="cubeta-elastocryl.html">
+                                                <li class="op-submenu">
+                                                    Elastocryl
+                                                    <div class="img-prod">
+                                                        <img src="img/cubeta_elastocryl_fs5.png" alt="">
+                                                    </div>
+                                                </li>
+                                            </a>
+
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <a href="productos.html">
+                                    <li class="op">Todos <i class="fas fa-caret-right"></i>
+
+                                    </li>
+                                </a>
+                                <li class="op text-disabled">Complementos <i class="fas fa-caret-right"></i>
+
+                                </li>
+                            </ul>
+
                             <!-- <div class="columna img">
-                                <img src="img/cubeta_estelar19.png" alt="">
-                            </div> -->
+                            <img src="img/cubeta_estelar19.png" alt="">
+                        </div> -->
 
                         </div>
                     </li>
-                    <li><a href="inspiracion.html">Inspiración</a></li>
+                    <li><a href="inspiracion.html">Inspiración <i class="fas fa-caret-down"></i></a>
+                        <div class="mega-menu">
+
+                            <ul class="opciones-menu">
+
+                                <h3 class="op">Inspirate</h3>
+
+                                <li class="op espacios">Espacios <i class="fas fa-caret-right"></i>
+
+                                    <div class="opciones-espacios">
+                                        <ul class="op-espacio">
+                                            <a href="" class="vista-espacio">
+                                                <img src="img/espacio-fachada.jpg" alt="">
+                                                <p> Fachadas</p>
+                                            </a>
+                                            <a href="" class="vista-espacio">
+                                                <img src="" alt="">
+                                                <p>Sala</p>
+                                            </a>
+                                            <a href="" class="vista-espacio">
+                                                <img src="" alt="">
+                                                <p>Comedor</p>
+                                            </a>
+                                            <a href="" class="vista-espacio">
+                                                <img src="" alt="">
+                                                <p>Cocina</p>
+                                            </a>
+                                            <a href="" class="vista-espacio">
+                                                <img src="" alt="">
+                                                <p>Recamara</p>
+                                            </a>
+                                            <a href="" class="vista-espacio">
+                                                <img src="" alt="">
+                                                <p>Baños</p>
+                                            </a>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <li class="op">Color en tu vida <i class="fas fa-caret-right"></i>
+
+
+
+                                </li>
+
+
+                            </ul>
+
+                            <!-- <div class="columna img">
+                            <img src="img/cubeta_estelar19.png" alt="">
+                        </div> -->
+
+                        </div>
+                    </li>
                     <li><a href="historia.html">Historias de éxito</a></li>
                     <li><a href="#">Carrito</a></li>
 
@@ -123,17 +258,19 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>    <div>
-                                    Esmalte <i class="fas fa-caret-down"></i>
-                                </div>
-                                <div class="subsub-menu">
-                                    <ul>
-                                        <li>Supremo</li>
-                                        <li>Suprema WB</li>
-                                        <li>Trafico</li>
+                                <li>
+                                    <div>
+                                        Esmalte <i class="fas fa-caret-down"></i>
+                                    </div>
+                                    <div class="subsub-menu">
+                                        <ul>
+                                            <li>Supremo</li>
+                                            <li>Suprema WB</li>
+                                            <li>Trafico</li>
 
-                                    </ul>
-                                </div></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li>
                                     <div>
                                         Impermeabilizante<i class="fas fa-caret-down"></i>
@@ -168,23 +305,25 @@
                                             <li>Recamara</li>
                                             <li>Baños</li>
                                             <li>Estudios</li>
-                                        
+
 
                                         </ul>
                                     </div>
                                 </li>
-                                <li>    <div>
-                                    Color en tu vida<i class="fas fa-caret-down"></i>
-                                </div>
-                                <div class="subsub-menu">
-                                    <ul>
-                                        <li><a href="color-vida.html">ColorLife</a></li>
-                                        <li>Tendencia</li>
-                                        <li>Combina</li>
-                                        <li>Paleta de colores</li>
+                                <li>
+                                    <div>
+                                        Color en tu vida<i class="fas fa-caret-down"></i>
+                                    </div>
+                                    <div class="subsub-menu">
+                                        <ul>
+                                            <li><a href="color-vida.html">ColorLife</a></li>
+                                            <li>Tendencia</li>
+                                            <li>Combina</li>
+                                            <li>Paleta de colores</li>
 
-                                    </ul>
-                                </div></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li>
                                     <div>
                                         Impermeabilizante<i class="fas fa-caret-down"></i>
@@ -232,12 +371,16 @@
                         <h2>SUPREMO WB</h2>
                     </div>
                     <div class="text-producto">
-                        <p><span>Característica</span>Suprema es una pintura vinil acrílica de excelente calidad, de
-                            acabado mate, alto rendimiento y poder cubriente, Tiene una alta resistencia y durabilidad
-                            15 Años.</p>
+                        <p><span>Característica</span>
+                            Esmalte base agua libre de olores, gran resistencia a la humedad. puede ser aplicada en
+                            cualquier tipo de superficie, gran blancura, durabilidad y brillo con un acabado satín que
+                            resalta los lugares donde sea aplicado, es capaz de alcanzar más de 100000 (cien mil) ciclos
+                            de lavado. 100% lavable y evita la formación de hongos y bacterias, ideal para el uso en el
+                            hogar o donde se manejen alimentos.
+                        </p>
                     </div>
                     <div class="text-producto">
-                        <p><span>Acabado</span>Mate y Satín</p>
+                        <p><span>Acabado</span>Brillante</p>
                     </div>
                     <div class="text-producto">
                         <p><span>Beneficios</span></p>
@@ -251,7 +394,7 @@
                     </div>
                     <div class="text-producto descarga">
 
-                        <a href="docs/carta-tecnica-suprema.pdf" target="_blank">
+                        <a href="docs/carta-tecnica-supremo-wb.pdf" target="_blank">
 
                             <i class="fas fa-download"></i>
 
@@ -275,7 +418,7 @@
                     <div class="col">
                         <h3>Rendimiento</h3>
                         <i class="fas fa-ruler"></i>
-                        <p>9 a 10m2</p>
+                        <p>6 a 8m2</p>
 
                     </div>
 
@@ -283,7 +426,7 @@
                         <h3>Acabado</h3>
 
                         <i class="fas fa-paint-roller"></i>
-                        <p>Mate y Satín</p>
+                        <p>Brillante</p>
                     </div>
 
                     <div class="col">
@@ -295,7 +438,7 @@
                     <div class="col">
                         <h3>Tiempo secado</h3>
                         <i class="fas fa-stopwatch"></i>
-                        <p>30min – 40 min</p>
+                        <p>45min - 60min</p>
                     </div>
 
                 </div>
@@ -435,8 +578,8 @@
             })
         }
     </script>
-        <script src="loading.js"></script>
-        <script src="menuMovil.js"></script>
+    <script src="loading.js"></script>
+    <script src="menuMovil.js"></script>
 </body>
 
 </html>

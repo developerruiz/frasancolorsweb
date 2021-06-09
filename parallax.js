@@ -23,7 +23,7 @@ var metParallax = {
 
         if(  propParallax.recorrido > propParallax.seccion.offsetTop - window.outerHeight && propParallax.recorrido <= propParallax.limite){
 
-            propParallax.seccion.style.backgroundPositionY = (propParallax.recorrido - propParallax.seccion.offsetTop) / 50 + 'px'  
+            propParallax.seccion.style.backgroundPositionY = (propParallax.recorrido - propParallax.seccion.offsetTop) / 100 + 'px'  
         }
         else{
             propParallax.seccion.style.backgroundPositionY = 0 ;

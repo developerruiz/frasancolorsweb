@@ -6,12 +6,18 @@ $gris-4-hex: #2F5780;
 $gris-5-hex: #89AACC;
 $color-blanco: #ffffff;
 
+$fuente: 'Roboto',
+sans-serif;
+$segunda-fuente: 'Montserrat',
+sans-serif;
+
 * {
     font-size: 14px;
     margin: 0;
     top: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: $segunda-fuente;
 }
 
 img {
@@ -62,6 +68,24 @@ li {
 }
 
 
+.info {
+    background: none !important;
+    box-shadow: none !important;
+
+    h2 {
+        font-weight: 900 !important;
+        font-style: italic;
+        font-size: 28px !important;
+        color: #222222 !important;
+    }
+
+    p {
+        font-size: 18px !important;
+        letter-spacing: 1px !important;
+        font-weight: 400 !important;
+    }
+}
+
 // LOADING
 
 .loading {
@@ -88,6 +112,16 @@ li {
 
     }
 
+}
+
+.icon-pantone {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 80%;
+    z-index: 99999;
+    animation: latido 2s infinite;
 }
 
 // FIN DE LOADING
@@ -146,6 +180,7 @@ header {
 
                     &:hover {
                         background: #ebebeb;
+
                         .mega-menu {
                             display: flex;
                         }
@@ -419,13 +454,14 @@ header {
 
                             // MEGA MENU SEGUNDA OPCION
 
-                            .op.espacios{
-                                &:hover{
-                                    .opciones-espacios{
+                            .op.espacios {
+                                &:hover {
+                                    .opciones-espacios {
                                         display: flex;
-                                    }    
+                                    }
                                 }
-                                .opciones-espacios{
+
+                                .opciones-espacios {
                                     display: none;
                                     margin-left: 350px;
                                     width: 50%;
@@ -435,15 +471,15 @@ header {
                                     justify-content: center;
                                     align-items: center;
 
-                                    .op-espacio{
+                                    .op-espacio {
                                         width: 100%;
                                         height: auto;
                                         display: flex;
                                         flex-wrap: wrap;
                                         justify-content: center;
-                                        
 
-                                        .vista-espacio{
+
+                                        .vista-espacio {
                                             width: 150px;
                                             height: 100px;
                                             background: red;
@@ -626,15 +662,17 @@ header {
 }
 
 main {
-    
+
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    // max-width: 1440px;
+    margin: 80px auto 0;
+    // height: 100vh;
 
     .contenedor {
         width: 100%;
         padding: 0 20px;
         padding: 40px;
+
 
 
         .titulo {
@@ -715,9 +753,9 @@ main {
     }
 
     .parallax {
-        background-image: url(../img/pinturpintura-derramada.jpg);
+        background-image: url(../img/parallax.jpg);
         background-position: right -10px;
-        background-size: contain;
+        background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
         width: 100%;
@@ -740,12 +778,26 @@ main {
         .cont-insp {
             width: 100%;
             display: flex;
+            align-items: center;
             height: 600px;
 
             .titulo {
                 position: absolute;
                 display: flex;
                 justify-content: center;
+            }
+
+            .idea {
+                width: 350px;
+                height: auto;
+                // padding: 50px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                // border: 4px solid #121212;
+                // border-radius: 15px;
+                // box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.2);
+                // background: transparent;
             }
 
             .columna:nth-child(1) {
@@ -1033,6 +1085,7 @@ main {
                 p {
                     font-size: 16px;
                     line-height: 25px;
+                    // text-transform: lowercase;
 
                     span {
                         font-size: 16px;
@@ -1224,7 +1277,7 @@ footer {
     // max-width: 1440px;
     width: 100%;
 
-    margin-top: 40px;
+    // margin-top: 40px;
     height: auto;
     background: #121212;
 
@@ -1531,6 +1584,20 @@ footer {
 
     50% {
         transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
     }
 
     100% {

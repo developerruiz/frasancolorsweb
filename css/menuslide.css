@@ -7,7 +7,13 @@
     overflow: hidden;
     margin-top: 80px;
   }
-  
+  .slider h2{
+    color: rgb(86, 86, 86);
+    font-size: 32px!important;
+    font-weight: 700;
+    
+  }
+
   .slider .slide{
     position: absolute;
     width: 100%;

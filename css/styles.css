@@ -6,6 +6,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -60,6 +61,25 @@ li {
   color: #e0e0e0;
 }
 
+.info {
+  background: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.info h2 {
+  font-weight: 900 !important;
+  font-style: italic;
+  font-size: 28px !important;
+  color: #222222 !important;
+}
+
+.info p {
+  font-size: 18px !important;
+  letter-spacing: 1px !important;
+  font-weight: 400 !important;
+}
+
 .loading {
   background-image: url(../img/splash.png);
   background-position: center top;
@@ -81,6 +101,17 @@ li {
   left: 49%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.icon-pantone {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  left: 30px;
+  top: 80%;
+  z-index: 99999;
+  -webkit-animation: latido 2s infinite;
+          animation: latido 2s infinite;
 }
 
 header {
@@ -669,8 +700,7 @@ header .line-gradient {
 
 main {
   width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+  margin: 80px auto 0;
 }
 
 main .contenedor {
@@ -750,9 +780,9 @@ main .cont-color .titulo h2 {
 }
 
 main .parallax {
-  background-image: url(../img/pinturpintura-derramada.jpg);
+  background-image: url(../img/parallax.jpg);
   background-position: right -10px;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
@@ -779,6 +809,9 @@ main .parallax .cont-insp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 600px;
 }
 
@@ -790,6 +823,18 @@ main .parallax .cont-insp .titulo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+main .parallax .cont-insp .idea {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main .parallax .cont-insp .columna:nth-child(1) {
@@ -1289,7 +1334,6 @@ main .column {
 
 footer {
   width: 100%;
-  margin-top: 40px;
   height: auto;
   background: #121212;
 }
@@ -1610,6 +1654,36 @@ footer .row:nth-child(4) .columna:nth-child(1) {
   50% {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes latido {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes latido {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
     -webkit-transform: scale(1);
