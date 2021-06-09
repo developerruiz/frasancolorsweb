@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 600px;
     overflow: hidden;
-    margin-top: 80px;
+    /* margin-top: 80px; */
   }
   .slider h2{
     color: rgb(86, 86, 86);

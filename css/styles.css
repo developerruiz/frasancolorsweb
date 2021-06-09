@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Color Theme Swatches in Hex */
 * {
   font-size: 14px;
@@ -16,6 +17,7 @@ img {
 
 a {
   text-decoration: none !important;
+  color: #121212;
 }
 
 .text-decoration-none {
@@ -241,7 +243,7 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu {
 }
 
 header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu {
-  width: 450px;
+  width: 410px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +289,7 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li {
 header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li .prod-vinilicas {
   display: none;
   position: absolute;
-  margin-left: 410px;
+  margin-left: 370px;
   height: 100%;
   width: 30%;
   -webkit-box-pack: start;
@@ -352,7 +354,7 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li .pro
 header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li .prod-esmalte {
   display: none;
   position: absolute;
-  margin-left: 410px;
+  margin-left: 370px;
   height: 100%;
   width: 30%;
   -webkit-box-pack: start;
@@ -417,7 +419,7 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li .pro
 header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu li .prod-impermeble {
   display: none;
   position: absolute;
-  margin-left: 410px;
+  margin-left: 370px;
   height: 100%;
   width: 30%;
   -webkit-box-pack: start;
@@ -505,14 +507,13 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu .op.esp
 
 header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu .op.espacios .opciones-espacios {
   display: none;
-  margin-left: 350px;
+  margin-left: 370px;
   width: 50%;
   height: 100%;
-  background: steelblue;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -536,6 +537,12 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu .op.esp
   height: 100px;
   background: red;
   margin: 20px;
+}
+
+header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu .op.espacios .opciones-espacios .op-espacio .vista-espacio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 header .nav_bar .others {
@@ -711,7 +718,7 @@ header .line-gradient {
 
 main {
   width: 100%;
-  margin: 80px auto 0;
+  margin: 0 auto;
 }
 
 main .contenedor {
@@ -1315,7 +1322,6 @@ main .banner {
   width: 100%;
   height: 300px;
   margin-top: 40px;
-  background-image: url(../img/banner-color-vida.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1323,10 +1329,10 @@ main .banner {
 
 main .banner .cont-text {
   background: rgba(255, 255, 255, 0.521);
-  width: 300px;
+  width: 400px;
   height: auto;
-  position: relative;
   top: 50%;
+  position: relative;
   left: 25%;
   -webkit-transform: translate(-50%, -15%);
           transform: translate(-50%, -15%);
@@ -1337,6 +1343,22 @@ main .banner .cont-text {
 main .banner .cont-text h3 {
   font-size: 40px;
   color: #3a0074;
+}
+
+main .banner.comedor {
+  background-image: url(../img/comedor-1.jpg) !important;
+}
+
+main .banner.cocina {
+  background-image: url(../img/cocina.jpg) !important;
+}
+
+main .banner.bano {
+  background-image: url(../img/baño.jpg) !important;
+}
+
+main .banner.fachada {
+  background-image: url(../img/fachada-banner.jpg) !important;
 }
 
 main .banner.sala {
