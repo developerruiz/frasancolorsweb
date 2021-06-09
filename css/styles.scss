@@ -67,6 +67,15 @@ li {
     color: #e0e0e0;
 }
 
+.row {
+    width: 100%;
+    height: auto;
+}
+
+
+.flex-direction-column {
+    flex-direction: column;
+}
 
 .info {
     background: none !important;
@@ -102,14 +111,14 @@ li {
     top: 0;
 
     .logoload {
-
+        
         width: 200px;
         height: 100px;
         position: relative;
         top: 40%;
         left: 49%;
         transform: translate(-50%, -50%);
-
+        
     }
 
 }
@@ -330,11 +339,11 @@ header {
                                             .img-prod {
 
                                                 display: flex;
+                                                // display: flex;
                                                 opacity: 1;
                                                 transition: 1s ease-in;
                                                 -webkit-transition: 1s ease-in;
                                                 -o-transition: 1s ease-in;
-
                                             }
                                         }
 
@@ -687,6 +696,38 @@ main {
             }
         }
 
+        // .cont-img {
+        //     width: 100%;
+        //     display: flex;
+
+        //     .columna-img {
+        //         width: 50%;
+        //         height: 400px;
+        //         padding: 5px;
+
+        //         img {
+        //             height: 100%;
+        //             object-fit: cover;
+        //         }
+
+        //         .col-top {
+        //             margin-bottom: 5px;
+        //         }
+
+        //         .col-bottom {
+        //             margin-top: 5px;
+        //         }
+
+        //         .col-top,
+        //         .col-bottom {
+        //             height: 250px;
+        //             overflow: hidden;
+        //             margin-left: 5px;
+        //             margin-right: 5px;
+
+        //         }
+        //     }
+        // }
 
     }
 
@@ -1266,12 +1307,96 @@ main {
                 color: rgb(58, 0, 116);
             }
         }
+
+        &.sala {
+            background-image: url(../img/sala-banner.jpg) !important;
+        }
+
+    }
+
+    .parrafo {
+        p {
+            font-size: 20px !important;
+        }
+    }
+
+    .titulo-sala {
+        font-weight: 900 !important;
+        // font-size: 40px!important;
+        color: #000080;
+    }
+
+    .divider {
+        margin: 40px auto;
+        width: 90%;
+
     }
 
     .column {
         width: 600px;
     }
+
+
+// SLIDE IMAGENES TU ESPACIO
+#sync1 {
+    .item {
+      background: #0c83e7;
+      color: #FFF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+    }
+  }
+  
+  #sync2 {
+    .item {
+      background: #C9C9C9;
+      color: #FFF;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      text-align: center;
+      cursor: pointer;
+      h1 {
+        font-size: 18px;
+      }
+    }
+    .current .item{
+      background: #0c83e7;
+    }
+  }
+  
+  
+  
+  .owl-theme {
+    .owl-nav {
+      /*default owl-theme theme reset .disabled:hover links */
+ display: none;
+      
+    }
+  }
+  
+  //arrows on first carousel
+  #sync1.owl-theme {
+    position: relative;
+    .owl-next, .owl-prev {
+      width: 22px;
+      height: 40px;
+      margin-top: -20px;
+      position: absolute;
+      top: 50%;
+    }
+    .owl-prev {
+      left: 10px;
+    }
+    .owl-next {
+      right: 10px;
+    }
+  }
+// SLIDE IMAGENES TU ESPACIO
 }
+
 
 footer {
     // max-width: 1440px;
@@ -1523,6 +1648,10 @@ footer {
         h3 {
             text-align: center;
         }
+    }
+
+    .container {
+        padding: 10px;
     }
 
     main .cont-color .manchas-btn img {
