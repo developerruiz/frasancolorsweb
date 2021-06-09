@@ -129,7 +129,6 @@ li {
 header {
   width: 100% !important;
   display: block !important;
-  position: fixed;
   z-index: 9;
 }
 

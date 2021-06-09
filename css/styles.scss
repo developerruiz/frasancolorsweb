@@ -111,14 +111,14 @@ li {
     top: 0;
 
     .logoload {
-        
+
         width: 200px;
         height: 100px;
         position: relative;
         top: 40%;
         left: 49%;
         transform: translate(-50%, -50%);
-        
+
     }
 
 }
@@ -139,7 +139,7 @@ li {
 header {
     width: 100% !important;
     display: block !important;
-    position: fixed;
+    // position: fixed;
     z-index: 9;
 
     .nav_bar {
