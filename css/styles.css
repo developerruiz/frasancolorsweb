@@ -51,6 +51,11 @@ li {
   display: flex;
 }
 
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1487,6 +1492,14 @@ footer::before {
   background: linear-gradient(to right, red, yellow, yellowgreen, steelblue, blue, #ff57f1, purple, red);
   position: absolute;
   z-index: 99999;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ff00c3;
 }
 
 footer .row:nth-child(1) {
