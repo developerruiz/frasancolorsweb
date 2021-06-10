@@ -1,0 +1,51 @@
+.item {
+  padding: 10px;
+}
+
+#sync1 .item {
+  background: #fff;
+  color: #FFF;
+  text-align: center;
+  height: auto;
+}
+
+#sync2 .item {
+  background: #fff;
+  color: #FFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+#sync2 .item h1 {
+  font-size: 18px;
+}
+
+#sync2 .current .item {
+  background: #fff;
+}
+
+.owl-theme .owl-nav {
+  /*default owl-theme theme reset .disabled:hover links */
+  display: none;
+}
+
+#sync1.owl-theme {
+  position: relative;
+}
+
+#sync1.owl-theme .owl-next, #sync1.owl-theme .owl-prev {
+  width: 22px;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  top: 50%;
+}
+
+#sync1.owl-theme .owl-prev {
+  left: 10px;
+}
+
+#sync1.owl-theme .owl-next {
+  right: 10px;
+}
+/*# sourceMappingURL=galeria.css.map */

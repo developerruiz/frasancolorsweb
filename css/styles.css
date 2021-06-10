@@ -41,10 +41,18 @@ li {
   list-style: none !important;
 }
 
+.my-5 {
+  margin: 0 40px !important;
+}
+
 .d-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .align-items-center {
@@ -61,6 +69,11 @@ li {
 
 .text-disabled {
   color: #e0e0e0;
+}
+
+.justify-content-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .row {
@@ -546,14 +559,15 @@ header .nav_bar .lista-menu .opciones-menu1 li .mega-menu .opciones-menu .op.esp
 }
 
 header .nav_bar .others {
-  width: 120px;
-  text-align: cemter;
+  width: 150px;
+}
+
+header .nav_bar .others ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header .nav_bar .others ul li i {
@@ -736,6 +750,41 @@ main .contenedor .titulo {
 
 main .contenedor .titulo h2 {
   font-size: 30px;
+}
+
+main .contenedor .cont-img-espacio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .contenedor .cont-img-espacio .columna-img {
+  width: 50%;
+  height: 400px;
+  padding: 5px;
+}
+
+main .contenedor .cont-img-espacio .columna-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .contenedor .cont-img-espacio .columna-img .col-top {
+  margin-bottom: 5px;
+}
+
+main .contenedor .cont-img-espacio .columna-img .col-bottom {
+  margin-top: 5px;
+}
+
+main .contenedor .cont-img-espacio .columna-img .col-top,
+main .contenedor .cont-img-espacio .columna-img .col-bottom {
+  height: 250px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 main .cont-color {
@@ -1328,7 +1377,7 @@ main .banner {
 }
 
 main .banner .cont-text {
-  background: rgba(255, 255, 255, 0.521);
+  background: rgba(255, 255, 255, 0.795);
   width: 400px;
   height: auto;
   top: 50%;
@@ -1365,8 +1414,13 @@ main .banner.sala {
   background-image: url(../img/sala-banner.jpg) !important;
 }
 
+main .banner.habitacion {
+  background-image: url(../img/sala-banner.jpg) !important;
+}
+
 main .parrafo p {
-  font-size: 20px !important;
+  font-size: 24px !important;
+  margin: 40px 0 !important;
 }
 
 main .titulo-sala {
@@ -1383,52 +1437,23 @@ main .column {
   width: 600px;
 }
 
-main #sync1 .item {
-  background: #0c83e7;
-  color: #FFF;
-  border-radius: 3px;
-  text-align: center;
+main .color-vida {
+  padding: 10px 20px;
 }
 
-main #sync2 .item {
-  background: #C9C9C9;
-  color: #FFF;
-  border-radius: 3px;
-  text-align: center;
-  cursor: pointer;
+main .color-vida h4 {
+  font-size: 30px;
 }
 
-main #sync2 .item h1 {
-  font-size: 18px;
+main .color-vida p {
+  font-size: 22px;
+  margin: 20px 0;
 }
 
-main #sync2 .current .item {
-  background: #0c83e7;
-}
-
-main .owl-theme .owl-nav {
-  /*default owl-theme theme reset .disabled:hover links */
-  display: none;
-}
-
-main #sync1.owl-theme {
-  position: relative;
-}
-
-main #sync1.owl-theme .owl-next, main #sync1.owl-theme .owl-prev {
-  width: 22px;
-  height: 40px;
-  margin-top: -20px;
-  position: absolute;
-  top: 50%;
-}
-
-main #sync1.owl-theme .owl-prev {
-  left: 10px;
-}
-
-main #sync1.owl-theme .owl-next {
-  right: 10px;
+main .titulo-tucolor {
+  font-size: 40px;
+  color: #000080;
+  font-weight: 700;
 }
 
 footer {
@@ -1683,12 +1708,17 @@ footer .row:nth-child(4) .columna:nth-child(1) {
     background-size: cover;
   }
   main .banner .cont-text {
-    left: 50%;
     top: 50%;
-    width: 60%;
+    width: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main .banner .cont-text h3 {
     text-align: center;
+  }
+  main .banner .cont-text h3 {
+    font-size: 28px;
   }
   .container {
     padding: 10px;
