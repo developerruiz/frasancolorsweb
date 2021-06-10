@@ -587,9 +587,11 @@ header .menu-movil {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 99999;
   position: fixed;
   left: -100%;
   text-align: left;
+  overflow-y: scroll;
 }
 
 header .menu-movil .lista-menu-movil ul .opcion {
@@ -848,7 +850,7 @@ main .cont-color .titulo h2 {
 
 main .parallax {
   background-image: url(../img/parallax.jpg);
-  background-position: right -10px;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -914,8 +916,23 @@ main .parallax .cont-insp .columna:nth-child(1) {
           align-items: center;
 }
 
+main .parallax .cont-insp .columna:nth-child(1) p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 main .parallax .cont-insp .columna:nth-child(2) {
   width: 50%;
+}
+
+main .parallax .cont-insp .columna:nth-child(2) p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main .cont-productos {

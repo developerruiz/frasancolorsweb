@@ -542,10 +542,12 @@ header {
         // align-items: center;
         // justify-content: left;
         flex-direction: column;
-
+        z-index: 99999;
         position: fixed;
         left: -100%;
         text-align: left;
+        overflow-y: scroll;
+        
 
         .lista-menu-movil {
 
@@ -808,7 +810,7 @@ main {
 
     .parallax {
         background-image: url(../img/parallax.jpg);
-        background-position: right -10px;
+        background-position: center center;
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -859,10 +861,23 @@ main {
                 // background: grey;
                 display: flex;
                 align-items: center;
+                p{
+                    width: 50%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
             }
 
             .columna:nth-child(2) {
                 width: 50%;
+                p{
+                    width: 50%;
+                    margin: 0 auto;
+                    font-size: 18px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
 
             }
 
