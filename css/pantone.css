@@ -1,5 +1,5 @@
 .card {
-  width: 120px;
+  width: 100px;
   background: #fff;
   -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
@@ -22,20 +22,31 @@
 .card .card-body,
 .card .card-footer {
   padding: 0 10px;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .card:hover {
   -webkit-box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.1);
-  -webkit-transform: scale(2);
-          transform: scale(2);
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
   transition: .1s ease-in;
   -webkit-transition: .1s ease-in;
   -o-transition: .1s ease-in;
 }
 
+.my-5 {
+  margin: 4 0px 0 !important;
+}
+
 .car-img {
   width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  main .contenedor {
+    padding: 0 !important;
+    margin: 60px 0 !important;
+  }
 }
 /*# sourceMappingURL=pantone.css.map */
