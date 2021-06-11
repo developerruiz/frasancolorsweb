@@ -1139,6 +1139,7 @@ main .parallax .cont-insp .columna:nth-child(2) p {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
+  text-align: right;
 }
 
 main .cont-productos {
