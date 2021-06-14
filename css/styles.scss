@@ -1009,8 +1009,10 @@ main {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-
+            
             .cubeta {
+                width: 100px;
+                height: 100px;
                 transition: .3s ease-in;
                 -webkit-transition: .3s ease-in;
                 -o-transition: .3s ease-in;

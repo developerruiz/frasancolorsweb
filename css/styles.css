@@ -1021,6 +1021,8 @@ main .cont-color .manchas-btn {
 }
 
 main .cont-color .manchas-btn .cubeta {
+  width: 100px;
+  height: 100px;
   transition: .3s ease-in;
   -webkit-transition: .3s ease-in;
   -o-transition: .3s ease-in;
