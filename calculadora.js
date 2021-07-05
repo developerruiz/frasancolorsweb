@@ -10,4 +10,4 @@ btnCalcular.addEventListener('click', function(){
     suma = parseFloat(muroAncho.value)+parseFloat(muroAlto.value)
     console.log(suma);
     
-})  
+})   
