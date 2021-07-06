@@ -13,7 +13,7 @@ let totalPuerta = document.getElementById('resultado_puerta')
 let botonAgregar =  document.getElementById('agregar')
 let btnCalcular = document.getElementById('resultadoMuro')
 
-let metrosPremium = 11 
+let metrosPremium = 11
 let metrosSuprema = 10
 let metrosEstelar = 10
 
